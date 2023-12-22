@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Integration App</title>
+  <!-- Add CSS if needed -->
+</head>
+<body>
+  <h1>Python Integration App</h1>
+  <button id="launchPython">Launch Python Code</button>
+  <div id="pythonOutput"></div>
+
+  <script>
+    document.getElementById('launchPython').addEventListener('click', async () => {
+      try {
+        const response = await fetch('/your-python-endpoint'); // Replace with your actual Python endpoint
+        if (!response.ok) {
+          throw new Error('Network response was not ok.');
+        }
+        const pythonOutput = await response.text();
+        document.getElementById('pythonOutput').innerText = pythonOutput;
+      } catch (error) {
+        console.error('Error:', error.message);
+      }
+    });
+  </script>
+</body>
+</html>
+
