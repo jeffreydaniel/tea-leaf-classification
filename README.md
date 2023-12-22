@@ -18,31 +18,37 @@ The classification into Grade A, Grade B, and Grade C is based on the following 
 
 - **Stem Length:** The length of the stem is a crucial factor in determining the grade of the tea leaf.
 - **Presence of Buds:** The presence or absence of buds contributes to the overall quality and grade of the tea.
+- **Colour of the leaves:** The lighter colored leaves represent a higher grade, while the darker colored ones represent lower grades.
 
-## Training
+# Training
+## Dataset Details:
+The data for the project was gathered by TANSAM employees at Ooty, Tamilnadu. The data includes various collections of grouped and single leaf pictures.
+Each leaf grade had their own set of grouped and single data.
 
-To train the YOLOv8 model, follow these steps:
+## Annotation:
+Annotation for the data was done using Roboflow's annotation tools. The dataset was later exported and used in order to train the model locally.
 
-1. **Data Preparation:** Organize your dataset with annotated images and corresponding labels.
-2. **Configuration:** Adjust the YOLOv8 configuration file to suit the requirements of the tea leaf classification task.
-3. **Training:** Train the model using the YOLOv8 training script, specifying the appropriate parameters.
+## Preprocessing steps:
+- Auto-Orient
+- Resizing: Stretch to 640x640
 
-## Usage
-
-To use the trained model for tea leaf classification:
-
-1. **Model Inference:** Run the YOLOv8 inference script on new images of tea leaves.
-2. **Results:** Review the classification results, including the predicted grade and relevant attributes.
+## Augmentation steps:
+- Flip: Horizontal, Vertical
+- Hue: Between -25° and +25°
+- Saturation: Between -25% and +25%
+- Brightness: Between -25% and +25%
 
 ## Dependencies
 
 - Python 3.x
-- YOLOv8
+- Ultralytics and YOLOv8
 
 ## Acknowledgments
+I extend my sincere gratitude to TANSAM (Tamilnadu Smart and Advanced Manufacturing) for providing us with a valuable project and dataset during our internship. 
 
 - Various members who worked on the project:
 - Jeffrey Terrance Daniel I.
+- Pranav Kumar G.
 - Naga Arjun V.
 - Rahul A.
 - Tanisha M.
