@@ -6,7 +6,7 @@ This project focuses on the classification of tea leaves into different grades u
 
 ## Dataset
 
-The dataset used for training and evaluation consists of images of tea leaves with corresponding annotations. The annotations include information about the grade of the tea leaves, such as the presence of buds, stem length, and other relevant attributes.
+The dataset used for training and evaluation consists of images of tea leaves with corresponding annotations. The annotations include information about the grade of the tea leaves, such as the presence of buds, stem length, and other relevant attributes .
 
 ## YOLOv8 Model
 
