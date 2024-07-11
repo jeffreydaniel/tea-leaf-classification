@@ -23,7 +23,7 @@ The classification into Grade A, Grade B, and Grade C is based on the following 
 # Training
 ## Dataset Details:
 The data for the project was gathered by TANSAM employees at Ooty, Tamilnadu. The data includes various collections of grouped and single leaf pictures.
-Each leaf grade had their own set of grouped and single data.
+Each leaf grade had their own set of grouped and single data. The dataset was thoroughly cleaned and checked by various members. Proper care was taken to ensure the confidentiality of the data.
 
 ## Annotation:
 Annotation for the data was done using Roboflow's annotation tools. The dataset was later exported and used in order to train the model locally.
